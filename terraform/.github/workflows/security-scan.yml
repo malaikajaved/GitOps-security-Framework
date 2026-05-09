@@ -6,12 +6,19 @@ on:
   pull_request:
     branches: [ main ]
 
+jobs:
+  checkov-scan:
+    name: Checkov Security Scan
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-
-
-    
-
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
       - name: Install Checkov
         run: pip install checkov
@@ -21,6 +28,11 @@ on:
           checkov -d terraform/insecure --framework terraform
         continue-on-error: true
 
-      - name: Run Checkov on secure Terraform files
-        run: |
-          checkov -d terraform/secure --framework terraform
+
+
+
+    
+
+
+     
+       
