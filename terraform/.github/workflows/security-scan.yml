@@ -1,15 +1,4 @@
-yamlname: Security Scan
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  checkov-scan:
-    name: Checkov Security Scan
-    runs-on: ubuntu-latest
 steps:
       - name: Checkout code
         uses: actions/checkout@v3
