@@ -1,4 +1,5 @@
 hcl
+# INSECURE: CloudTrail logging disabled
 
 resource "aws_cloudtrail" "insecure_trail" {
   name                          = "insecure-trail"
