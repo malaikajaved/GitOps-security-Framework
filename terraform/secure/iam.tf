@@ -16,3 +16,11 @@ resource "aws_iam_policy" "secure_policy" {
     ]
   })
 }
+# SECURE: IAM user with MFA enabled
+resource "aws_iam_user" "secure_user" {
+  name = "secure-user"
+}
+
+resource "aws_iam_virtual_mfa_device" "secure_mfa" {
+  virtual_mfa_device_name = "secure-user-mfa"
+}
