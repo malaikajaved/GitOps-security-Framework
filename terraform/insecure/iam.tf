@@ -1,4 +1,5 @@
-hcl# INSECURE: IAM policy with full admin access
+hcl
+# INSECURE: IAM policy with full admin access
 resource "aws_iam_policy" "insecure_policy" {
   name = "insecure-admin-policy"
 
