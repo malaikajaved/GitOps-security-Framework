@@ -11,3 +11,14 @@ resource "aws_cloudtrail" "secure_trail" {
     include_management_events = true
   }
 }
+# SECURE: S3 bucket with versioning enabled
+resource "aws_s3_bucket" "versioned_bucket" {
+  bucket = "my-versioned-secure-bucket"
+}
+
+resource "aws_s3_bucket_versioning" "enabled_versioning" {
+  bucket = aws_s3_bucket.versioned_bucket.id
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
