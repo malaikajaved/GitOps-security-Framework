@@ -22,3 +22,9 @@ resource "aws_s3_bucket_versioning" "enabled_versioning" {
     status = "Enabled"
   }
 }
+# SECURE: Encrypted EBS volume
+resource "aws_ebs_volume" "secure_ebs" {
+  availability_zone = "eu-west-2a"
+  size              = 20
+  encrypted         = true
+}
