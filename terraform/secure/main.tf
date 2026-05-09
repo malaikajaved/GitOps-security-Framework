@@ -1,7 +1,7 @@
 hcl
 
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-2"
 }
 
 # SECURE: S3 bucket with private access and encryption
