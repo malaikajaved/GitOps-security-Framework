@@ -1,1 +1,12 @@
+yamlname: Security Scan
 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  checkov-scan:
+    name: Checkov Security Scan
+    runs-on: ubuntu-latest
