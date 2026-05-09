@@ -28,7 +28,9 @@ jobs:
           checkov -d terraform/insecure --framework terraform
         continue-on-error: true
 
-
+- name: Run Checkov on secure Terraform files
+        run: |
+          checkov -d terraform/secure --framework terraform
 
 
     
