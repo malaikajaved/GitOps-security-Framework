@@ -22,7 +22,7 @@ rule {
     }
   }
 }
-
+# SECURE: Security group with restricted access
 resource "aws_security_group" "secure_sg" {
   name = "secure-sg"
 
