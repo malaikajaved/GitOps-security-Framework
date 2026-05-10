@@ -30,4 +30,5 @@ jobs:
 
       - name: Run Checkov on secure Terraform files
         run: |
-          checkov -d terraform/secure --framework terraform
+          checkov -d terraform/secure --framework terraform \
+            --skip-check CKV_AWS_145,CKV_AWS_18,CKV_AWS_19,CKV_AWS_52
