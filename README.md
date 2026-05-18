@@ -27,4 +27,13 @@ final year dissertation project.
 3. Go to the Actions tab to see Checkov results
 4. Fix any flagged violations and push again
 
+## Security Checks Performed
 
+| Check ID | Description |
+|----------|-------------|
+| CKV_AWS_20 | S3 bucket public read access |
+| CKV_AWS_62 | IAM full admin privileges |
+| CKV_AWS_25 | Security group open to all traffic |
+| CKV_AWS_67 | CloudTrail logging disabled |
+| CKV_AWS_3 | EBS volume unencrypted |
+| CKV_AWS_17 | RDS publicly accessible |
