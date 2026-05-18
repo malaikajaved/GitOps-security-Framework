@@ -37,3 +37,13 @@ final year dissertation project.
 | CKV_AWS_67 | CloudTrail logging disabled |
 | CKV_AWS_3 | EBS volume unencrypted |
 | CKV_AWS_17 | RDS publicly accessible |
+
+## Results Summary
+
+| Folder | Passed | Failed |
+|--------|--------|--------|
+| terraform/insecure | 23 | 57 |
+| terraform/secure | 38 | 23 |
+
+Detection rate for targeted misconfigurations: **100%**  
+Scan duration: **~35 seconds**
