@@ -42,7 +42,7 @@ final year dissertation project.
 
 | Folder | Passed | Failed |
 |--------|--------|--------|
-| terraform/insecure | 23 | 57 |
+| terraform/insecure | 27 | 67 |
 | terraform/secure | 38 | 23 |
 
 Detection rate for targeted misconfigurations: **100%**  
