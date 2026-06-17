@@ -7,7 +7,7 @@ resource "aws_ebs_volume" "insecure_ebs" {
 
 # INSECURE: Unencrypted RDS snapshot
 
-resource "aws_db_instance" "insecure_rds_snapshot" {
+resource "aws_db_instance" "insecure_rds_snapshot" 
   identifier          = "insecure-rds-snapshot"
   engine              = "mysql"
   instance_class      = "db.t3.micro"
